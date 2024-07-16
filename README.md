@@ -108,6 +108,7 @@ python scripts/misc/extract_frames.py /PATH/TO/CondensedMovies /PATH/TO/et-data
 
 </details>
 <br>
+---
 
 Here are the instructions for running the data extraction scripts to reproduce the E.T. dataset.
 
@@ -143,7 +144,7 @@ python scripts/misc/dataset_processing.py /PATH/TO/et-data
 
 ## Visualization
 
-There are 3 different ways of visualizing results, using [blender](https://www.blender.org/), [rerun](https://rerun.io/) and [gradio](https://www.gradio.app/).
+There are 2 different ways of visualizing samples, using [blender](https://www.blender.org/) and [rerun](https://rerun.io/).
 
 Note: You will need meshes, which are not yet released with the dataset.
 
