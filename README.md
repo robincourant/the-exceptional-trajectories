@@ -107,7 +107,7 @@ python scripts/misc/extract_frames.py /PATH/TO/CondensedMovies /PATH/TO/et-data
 ```
 
 </details>
-<br>
+
 ---
 
 Here are the instructions for running the data extraction scripts to reproduce the E.T. dataset.
