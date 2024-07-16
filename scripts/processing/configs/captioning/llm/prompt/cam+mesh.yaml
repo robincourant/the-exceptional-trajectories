@@ -1,0 +1,11 @@
+context: "You act as a camera operator writing a technical script for camera motion descriptions."
+instruction: "Given a rough outline of the camera motion and main character motion, write the camera motion description according to the main character motion."
+relevance: ""
+constraint: "The sentence should be short, and factual. Do not mention frame indices."
+demonstration: |
+    # Examples
+    Outline: Total frames 209.
+        [Camera motion] Between frames 0 and 154: boom top, Between frames 155 and 209: static.
+        [Main character motion] Between frames 0 and 146: move up, Between frames 147 and 209: static.
+    Description: While the character climbs up, the camera follows them with a boom top, and as soon as the character stops, it remains static.
+    # End of examples

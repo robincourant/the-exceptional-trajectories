@@ -1,0 +1,6 @@
+defaults:
+  - _self_
+  - prompt: cam+char
+
+model_dir: "pretrained_models/mistralai/Mixtral-8x7B-Instruct-v0.1"
+device: "cuda"

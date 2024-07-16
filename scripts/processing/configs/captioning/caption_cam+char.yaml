@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - cam: segment_cam
+  - char: segment_char
+  - llm: mistral7_cam+char
+
+name: caption
+data_dir: './data/CondensedMovies/trajectories/0300'
+overwrite: false
+reverse: true
+
+smoothing_window_size: 56
+min_chunk_size: 25
+fps: 25.0

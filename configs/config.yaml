@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - data: cm_clip.all
+  - model: slahmr
+  - compnode: 2c_1g_1t
+
+save_dir: ${hydra:runtime.cwd}/slahmr_out

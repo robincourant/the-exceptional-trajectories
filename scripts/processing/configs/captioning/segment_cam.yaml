@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+  - cam: segment_cam
+
+data_dir: './data/CondensedMovies/trajectories/0300'
+overwrite: false
+
+smoothing_window_size: 56
+min_chunk_size: 25
+fps: 25.0

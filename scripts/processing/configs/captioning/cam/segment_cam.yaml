@@ -1,0 +1,2 @@
+static_threshold: 0.02
+diff_threshold: 0.4

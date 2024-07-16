@@ -1,0 +1,5 @@
+data_dir: ./data
+metadata_filename: clips.csv
+ref_filename: slahmr_clips.csv
+frame_step: 1
+video_extension: .mkv

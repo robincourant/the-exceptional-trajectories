@@ -1,0 +1,22 @@
+gpus: [0]
+img_dirname: images
+overwrite: false
+
+phalp:
+  gpus: ${model.gpus}
+  img_dirname: ${model.img_dirname}
+  out_dirname: phalp_out
+  overwrite: ${model.overwrite}
+
+slam:
+  gpus: ${model.gpus}
+  img_dirname: ${model.img_dirname}
+  out_dirname: slam_out
+  overwrite: ${model.overwrite}
+
+slahmr:
+  img_dirname: ${model.img_dirname}
+  cam_dirname: slam_out
+  track_dirname: track_preds/demo_images
+  shot_dirname: shot_idcs/demo_images.json
+  out_dirname: slahmr_out
