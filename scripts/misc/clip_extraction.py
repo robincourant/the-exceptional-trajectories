@@ -20,8 +20,7 @@ batch_size, context_length = None, None
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("input_dir", type=Path)
-    parser.add_argument("output_dir", type=Path)
+    parser.add_argument("data_dir", type=Path)
     parser.add_argument("--batch_size", "-bs", type=int, default=50)
     parser.add_argument("--max_token_length", "-tl", type=int, default=None)
     parser.add_argument("--save_seq", "-sq", action="store_true")
@@ -107,8 +106,7 @@ def encode_text(
 
 
 def extract_clip(
-    input_dir: Path,
-    output_dir: Path,
+    data_dir: Path,
     batch_size: int,
     max_token_length: int,
     clip_version: str,
@@ -117,8 +115,9 @@ def extract_clip(
     save_mask: bool,
     device: str,
 ):
-    caption_paths = get_samplepaths(input_dir)
+    caption_paths = get_samplepaths(data_dir / "caption")
     caption_loader = DataLoader(caption_paths, batch_size=batch_size, shuffle=False)
+    output_dir = data_dir / "caption_clip"
     clip_model = load_clip_model(clip_version, device)
 
     with PROGRESS:

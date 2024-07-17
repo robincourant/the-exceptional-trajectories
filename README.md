@@ -142,6 +142,12 @@ python scripts/processing/dataset_processing.py /PATH/TO/et-data -c -v /PATH/TO/
 python scripts/misc/dataset_processing.py /PATH/TO/et-data
 ```
 
+7. Extract caption CLIP features:
+```
+python scripts/miscclip_extraction.py /PATH/TO/et-data -sq -t -cv ViT-B/32
+```
+
+
 ## Visualization
 
 There are 2 different ways of visualizing samples, using [blender](https://www.blender.org/) and [rerun](https://rerun.io/).
