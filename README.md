@@ -137,12 +137,17 @@ python scripts/processing/trajectory_cleaning.py /PATH/TO/et-data
 python scripts/processing/dataset_processing.py /PATH/TO/et-data -c -v /PATH/TO/CondensedMovies
 ```
 
-6. Shift all samples according to the origin of the character:
+6. Caption all samples - tagging + caption generation - (check `scripts/processing/configs/captioning` for config details):
+```
+python scripts/processing/dataset_captioning.py
+```
+
+7. Shift all samples according to the origin of the character:
 ```
 python scripts/misc/dataset_processing.py /PATH/TO/et-data
 ```
 
-7. Extract caption CLIP features:
+8. Extract caption CLIP features:
 ```
 python scripts/miscclip_extraction.py /PATH/TO/et-data -sq -t -cv ViT-B/32
 ```
